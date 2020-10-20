@@ -9,13 +9,15 @@ def find_even_values(array_of_arrays)
     [7,8,9]
   ]
 
-  row_index = 0
-  while row_index < array_of_arrays.count do
-    element_index = 0
-    while element_index < array_of_arrays[row_index].count do
-      p array_of_arrays[row_index][element_index]
-      element_index += 2
+count = 0
+even_values_array = []
+
+  while count < array_of_arrays.length do
+    inner_count = 0
+    while inner_count < array_of_arrays[count].length do
+      p even_values_array << array_of_arrays[count][inner_count]
+      inner_count += 2
   end
-  row_index += 1
+  count += 1
 end
-find_even_values(array_of_arrays)
+even_values_array
