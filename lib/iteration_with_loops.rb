@@ -8,4 +8,5 @@ def find_even_values(src)
     [4,5,6],
     [7,8,9]
   ]
+  find_even_values(array_of_arrays)
 end
