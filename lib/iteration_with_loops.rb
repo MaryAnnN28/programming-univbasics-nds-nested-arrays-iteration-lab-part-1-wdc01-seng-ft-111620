@@ -2,6 +2,9 @@
 #
 # Output all even values in each nested array
 
+count = 0
+even_values_array = []
+
 def find_even_values(array_of_arrays)
   array_of_arrays = [
     [1,2,3],
@@ -9,8 +12,6 @@ def find_even_values(array_of_arrays)
     [7,8,9]
   ]
 
-count = 0
-even_values_array = []
 
   while count < array_of_arrays.length do
     inner_count = 0
